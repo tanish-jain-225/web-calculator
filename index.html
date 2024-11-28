@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- meta tags for SEO  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web based calculator that can be accessed anytime and anywhere">
+
+    <!-- title of page  -->
+    <title>WebCalc</title>
+
+    <!-- manual CSS link  -->
+    <link rel="stylesheet" href="./resources/style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./resources/icon.png" type="image/x-icon">
+
+    <!-- included bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="box">
+        <!-- navbar bootstrap and custom -->
+        <nav class="custom-nav">
+            <nav class="navbar bg-dark">
+                <div class="container-fluid">
+                    <!-- navbar logo and heading -->
+                    <a class="navbar-brand" href="" onclick="return false" style="color: white; font-weight: bold;">
+                        <img src="./resources/icon.png" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                        WebCalc
+                    </a>
+                </div>
+            </nav>
+        </nav>
+
+        <!-- calculator utility -->
+        <main>
+            <div class="calculator">
+
+                <!-- input display which cannot be changed until input is from web buttons  -->
+                <input type="text" class="calc-input" id="screen" readonly>
+
+                <!-- buttons of calculator -->
+                <div class="btn-holder">
+                    <table>
+                        <tr>
+                            <td>
+                                <button class="custom-btn">1</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">2</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">3</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">*</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="custom-btn">4</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">5</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">6</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">/</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="custom-btn">7</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">8</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">9</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">+</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="custom-btn">%</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">0</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">.</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="custom-btn">AC</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">(</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">)</button>
+                            </td>
+                            <td>
+                                <button class="custom-btn">=</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- custom footer  -->
+        <footer>
+            <div class="foot-text">
+                Copyright &copy; 2024 | www.webcalc.com | All Rights Reserved
+            </div>
+        </footer>
+    </div>
+
+    <!-- manual js -->
+    <script src="./resources/script.js"></script>
+
+    <!-- included bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

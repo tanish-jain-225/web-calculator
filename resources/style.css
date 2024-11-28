@@ -1,0 +1,101 @@
+/* css  */
+
+
+/* universal tag reset  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Custom CSS */
+
+.custom-nav {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+.calculator {
+    display: block;
+    width: 400px;
+    padding: 10px;
+    margin: 6px auto;
+    background-color: #17181b;
+    border: none;
+    border-radius: 20px;
+}
+
+.calc-input {
+    display: block;
+    width: 90%;
+    padding: 6px 12px;
+    margin: 8px auto;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 22px;
+    min-height: 50px;
+}
+
+.btn-holder {
+    display: block;
+    width: 100%;
+    padding: 2px;
+    margin: auto;
+}
+
+table {
+    /* use of flex box  */
+    display: flex;
+    /* width: 100%; */
+    padding: 2px;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-btn {
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    padding: 2px;
+    margin: 2px;
+    border: none;
+    border-radius: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px;
+    background-color: #17181b;
+}
+
+.foot-text {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* media queries  */
+
+@media screen and (max-width: 425px) {
+    .custom-btn {
+        width: 60px;
+    }
+
+    .calculator {
+        width: 300px;
+    }
+}
